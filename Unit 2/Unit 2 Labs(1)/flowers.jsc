@@ -1,0 +1,74 @@
+@Java
+//(c) A+ Computer Science   
+
+method final()
+{
+oneSide();
+turn(RIGHT);
+oneSide();
+turn(RIGHT);
+oneSide();
+turn(RIGHT);
+oneSide();
+turn(RIGHT);
+
+}
+
+method oneSide()
+{
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+}
+@@
+//(c) A+ Computer Science
+
+method main()
+{
+Jeroo jon = new Jeroo(0,0,EAST,95);
+jon.final();
+} 

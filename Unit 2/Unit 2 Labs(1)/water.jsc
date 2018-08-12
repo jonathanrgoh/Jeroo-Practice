@@ -1,0 +1,43 @@
+@Java
+//(c) A+ Computer Science  
+
+method makeAFlowerBox()
+{   
+plantOneSide();
+turn(RIGHT);
+plantOneSide();
+turn(RIGHT);
+plantOneSide();
+turn(RIGHT);
+plantOneSide();
+turn(RIGHT);
+}
+
+method plantOneSide()
+{ 
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();
+plant();
+hop();           
+}
+@@
+//(c) A+ Computer Science
+
+method main()
+{
+Jeroo jon = new Jeroo(4,6,EAST,32);
+jon.makeAFlowerBox();
+} 

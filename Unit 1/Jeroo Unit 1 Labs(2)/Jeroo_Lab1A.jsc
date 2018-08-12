@@ -1,0 +1,19 @@
+@Java
+
+@@
+method main()
+{
+Jeroo jon = new Jeroo(0,0);
+jon.hop(4);
+jon.pick();
+jon.hop();
+jon.toss();
+jon.hop(5);
+jon.pick();
+jon.hop();
+jon.toss();
+jon.hop(4);
+jon.pick();
+jon.hop();
+jon.toss();
+}

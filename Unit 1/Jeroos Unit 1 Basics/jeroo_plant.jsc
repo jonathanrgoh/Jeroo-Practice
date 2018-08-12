@@ -1,0 +1,16 @@
+@Java
+
+@@
+//(c) A+ Computer Science
+
+method main()
+{
+   Jeroo dude = new Jeroo(3,3,7);
+   dude.plant();
+   dude.hop();
+   dude.plant();
+   dude.hop(3);
+   dude.plant();
+   dude.hop(2);
+}
+

@@ -1,0 +1,18 @@
+@Java
+
+@@
+//(c) A+ Computer Science
+
+method main()
+{
+  Jeroo bob = new Jeroo(2);
+  Jeroo ann = new Jeroo(0,3);
+  bob.hop();
+  bob.hop();
+  bob.give(AHEAD);     //give ann a flower
+  ann.plant();         //ann can now plant a flower
+  bob.turn(RIGHT);
+  bob.hop(4);
+  ann.hop(2);
+}
+

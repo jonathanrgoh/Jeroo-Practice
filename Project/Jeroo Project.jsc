@@ -1,0 +1,116 @@
+@Java
+method solveMaze()
+{
+   while(!isJeroo(AHEAD))
+      {
+         hop();
+         if(isNet(AHEAD))
+            {
+               toss();
+            }
+         if(isFlower(HERE))
+            {
+               pick();
+            }
+         
+         if(isClear(AHEAD) && isClear(RIGHT) && isWater(LEFT))
+            {
+               turn(RIGHT);
+            }
+           if(isNet(RIGHT) && isWater(AHEAD) && isWater(LEFT))
+          {
+           turn(RIGHT);
+            if (isFacing(EAST))
+                 {
+                 toss();
+                 hop();
+                 }
+                } 
+                 if(isNet(RIGHT) && isClear(AHEAD))
+                  {
+                   turn(LEFT);
+                    if(isNet(AHEAD))
+                   {
+                    turn(RIGHT);
+                   }
+                  }
+                   if(isWater(AHEAD))
+                  {
+                   if(isWater(RIGHT) && isWater(LEFT))
+                  {
+                     turn(RIGHT);
+                     turn(RIGHT);
+                  }
+                 else if(isWater(AHEAD) && isWater(RIGHT))
+                  {
+                     turn(LEFT);
+                  }
+               else if(isWater(AHEAD))
+                  {
+                     turn(RIGHT);
+                  }
+               else if(isNet(LEFT) && isWater(RIGHT))
+                  {
+                     hop();
+                     turn(LEFT);
+                     hop();
+                     }
+                    }
+                   }
+                  }
+            
+method backward()
+{
+   if(isFacing(EAST))
+   {
+   turn(LEFT);
+   turn(LEFT);
+   }
+   
+   while(isClear(AHEAD))
+      {
+      hop();
+      if(isWater(RIGHT) && isWater(AHEAD))
+         {
+         turn(LEFT);
+         }
+      if(isWater(AHEAD) && isWater(LEFT))
+         {
+         turn(RIGHT);
+         }
+      if(isFacing(EAST) && isWater(AHEAD) && isClear(RIGHT))
+         {
+         turn(LEFT);
+         }
+      if(isFacing(EAST) && isClear(AHEAD) && isClear(LEFT) && isClear(RIGHT))
+         {
+         turn(LEFT);
+         }
+      if(isFacing(NORTH) && isWater(AHEAD) && isClear(RIGHT) && isClear(LEFT))
+         {
+         turn(RIGHT);
+         hop(2);
+         turn(RIGHT);
+         hop(2);
+         turn(LEFT);
+         }
+      }
+}
+
+          
+
+@@
+method main()
+{
+Jeroo shrek = new Jeroo(12,2,EAST);
+Jeroo donkey = new Jeroo(12,1,EAST,1);
+Jeroo fionna = new Jeroo(11,22,WEST);
+Jeroo dragon = new Jeroo(12,19,WEST);
+
+shrek.solveMaze();
+donkey.solveMaze();
+
+donkey.backward();
+shrek.backward();
+fionna.backward();
+}

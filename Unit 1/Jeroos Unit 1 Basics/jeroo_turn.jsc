@@ -1,0 +1,22 @@
+@Java
+
+@@
+//(c) A+ Computer Science
+
+method main()
+{
+  Jeroo bob = new Jeroo(4);
+  bob.hop(4);
+  bob.plant();
+  bob.turn(RIGHT);
+  bob.hop(4);
+  bob.plant();
+  bob.turn(RIGHT);
+  bob.hop(4);
+  bob.plant();
+  bob.turn(RIGHT);
+  bob.hop(4);
+  bob.plant();
+  bob.turn(RIGHT);    
+}
+
