@@ -1,0 +1,57 @@
+@Java
+//(c) A+ Computer Science  
+
+method go()
+{
+   while(!isWater(AHEAD))
+   {
+   hop();
+   pick();
+      while(isWater(AHEAD))
+      {
+      moveDownARow();
+      }
+   }
+   
+} 
+
+method  moveDownARow()
+{
+      pick();
+      if(isFacing(EAST))
+      {
+      turn(RIGHT);
+      if(isWater(AHEAD))
+      {
+         
+      }
+      else if(!isWater(AHEAD))
+      {
+         hop();
+         pick();
+         turn(RIGHT);
+      }
+      }else if(isFacing(WEST))
+      {
+      turn(LEFT);
+         if(isWater(AHEAD))
+         {
+         
+         }
+      else if(!isWater(AHEAD))
+      {
+      hop();
+      pick();
+      turn(LEFT);
+      }
+      }
+}
+
+@@
+//(c) A+ Computer Science
+
+method main()
+{
+   Jeroo jon = new Jeroo(0,0,EAST,1);
+   jon.go();
+} 

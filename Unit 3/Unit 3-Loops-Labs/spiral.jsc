@@ -1,0 +1,39 @@
+@Java
+//(c) A+ Computer Science  
+
+method spiralIn()
+{
+while(!isFlower(AHEAD))
+{
+   while(!isWater(AHEAD))
+   {
+   hop(); 
+   }
+   
+   if(isWater(AHEAD))
+         {
+         turn(RIGHT);
+         }  
+}
+         
+}
+         
+        
+
+
+
+
+
+method spiralOut()
+{
+}
+
+@@
+//(c) A+ Computer Science
+
+method main()
+{
+Jeroo jon = new Jeroo(0,0,EAST);
+
+jon.spiralIn();
+}

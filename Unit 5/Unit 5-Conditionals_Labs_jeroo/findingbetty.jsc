@@ -1,0 +1,56 @@
+@Java
+method solve()
+{
+   while((!isJeroo(AHEAD) && !isWater(AHEAD)))
+   {
+   hop();
+   face();
+   }
+}
+
+method face()
+{
+   if((isNet(AHEAD) || isWater(AHEAD)))
+   {
+      while((isNet(AHEAD) && isNet(LEFT)))
+      {
+      turn(RIGHT);
+      }
+      
+      while((isNet(AHEAD) && isFlower(LEFT)))
+      {
+      turn(RIGHT);
+      }
+      
+      while((isWater(AHEAD) && isWater(LEFT)))
+      {
+      turn(RIGHT);
+      }
+      
+      while((isWater(AHEAD) && isFlower(LEFT)))
+      {
+      turn(RIGHT);
+      }
+      
+      while((isNet(AHEAD) && isWater(LEFT)))
+      {
+      turn(RIGHT);
+      }
+   }
+   else if(isFlower(AHEAD))
+   {
+   while((isFlower(AHEAD) && isClear(RIGHT)))
+      {
+      turn(RIGHT);
+      }
+      
+   }
+}
+@@
+method main()
+{
+Jeroo jon = new Jeroo(1,0,EAST);
+Jeroo j = new Jeroo(12,11,WEST);
+jon.solve();
+}
+

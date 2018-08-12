@@ -1,0 +1,67 @@
+@Java
+//(c) A+ Computer Science  
+
+method clearFence()
+{
+   while(isFlower(AHEAD))
+   {
+   hop();
+   pick();
+   turn(RIGHT);
+   toss();
+   turn(LEFT);
+      if(isClear(AHEAD))
+      {
+      turnCorner();
+      }
+   }
+}
+
+method turnCorner()
+{
+hop();
+turn(RIGHT);
+hop();
+   if(isClear(AHEAD))
+   {
+   hop(2);
+      if(isFlower(RIGHT))
+      {
+      turn(RIGHT);
+      hop();
+      pick();
+      toss();
+      turn(LEFT);
+      }
+      
+   }
+}
+
+method runWest()
+{
+if(!isWater(AHEAD))
+{
+while(!isWater(AHEAD))
+{
+hop();
+}
+}
+} 
+
+
+@@
+//(c) A+ Computer Science
+
+method main()
+{
+Jeroo jon = new Jeroo(3,4,EAST);
+Jeroo joni = new Jeroo(10,11,EAST);
+Jeroo jo = new Jeroo(12,12,EAST);
+Jeroo j = new Jeroo(15,9,EAST);
+jon.clearFence();
+jon.runWest();
+jo.runWest();
+joni.runWest();
+j.runWest();
+
+} 

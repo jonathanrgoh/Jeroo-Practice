@@ -1,0 +1,25 @@
+@Java
+//(c) A+ Computer Science  
+
+method go()
+{
+   //Jeroo will go forward until it
+   //is facing water
+   //
+   //add code to make the Jeroo turn and
+   //keep going
+   //
+   if ( isClear( AHEAD )  )
+   {
+      hop();
+      go();
+   }
+} 
+@@
+//(c) A+ Computer Science
+
+method main()
+{
+   Jeroo bob = new Jeroo(4);
+   bob.go();
+} 

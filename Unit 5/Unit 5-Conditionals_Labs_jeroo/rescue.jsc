@@ -1,0 +1,17 @@
+@Java
+//(c) A+ Computer Science
+
+method rescue()
+{
+}
+
+@@
+//(c) A+ Computer Science   
+
+method main()
+{
+  Jeroo prince = new Jeroo(1,0,EAST,2);
+  Jeroo guide1 = new Jeroo(23,7,EAST);
+  Jeroo guide2 = new Jeroo(2,5,SOUTH);
+  Jeroo princess = new Jeroo(3,1,SOUTH);
+} 

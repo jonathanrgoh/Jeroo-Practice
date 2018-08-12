@@ -1,0 +1,15 @@
+@Java
+
+@@
+method main()  
+{
+  Jeroo chuck = new Jeroo(1);
+  if( chuck.isNet(AHEAD) ){
+    chuck.toss();
+    chuck.hop(3);
+  }
+  else { 
+    chuck.turn(RIGHT);
+    chuck.hop(5);
+  }
+} 

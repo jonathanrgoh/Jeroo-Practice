@@ -1,0 +1,17 @@
+@Java
+
+@@
+//(c) A+ Computer Science  
+
+method main()
+{
+   Jeroo bob = new Jeroo(6);
+   while ( bob.isClear( AHEAD ) )
+   {
+      bob.hop();
+      if( bob.isWater( AHEAD ) )
+      {
+         bob.turn(RIGHT);
+      }
+   }
+} 

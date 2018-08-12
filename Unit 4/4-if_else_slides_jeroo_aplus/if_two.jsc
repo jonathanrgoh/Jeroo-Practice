@@ -1,0 +1,16 @@
+@Java
+
+@@
+method main()   
+{
+  Jeroo joe = new Jeroo(1);
+  Jeroo fred = new Jeroo(0,1);
+  if( joe.isJeroo(AHEAD) )
+  {  
+    joe.give(AHEAD); 
+	 joe.turn(RIGHT); 
+  } 
+  joe.hop();
+  fred.plant();
+  fred.hop(7);
+}

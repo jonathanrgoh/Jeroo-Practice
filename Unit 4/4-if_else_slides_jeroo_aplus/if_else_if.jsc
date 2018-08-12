@@ -1,0 +1,17 @@
+@Java
+
+@@
+method main()  
+{
+  Jeroo jerry = new Jeroo(1);
+  if( jerry.isNet(AHEAD) ){     
+    jerry.toss();   
+  }
+  else if( jerry.isWater(AHEAD) ){     
+    jerry.turn(RIGHT);      
+  }
+  else if (jerry.hasFlower()){     
+    jerry.plant();      
+  }
+  jerry.hop();
+} 

@@ -1,0 +1,16 @@
+@Java
+
+@@
+method main()   
+{
+  Jeroo betty = new Jeroo(1);
+  if(betty.isNet(AHEAD))
+  {
+    betty.toss();
+    betty.hop(3);
+  }
+  betty.turn(RIGHT);
+  betty.hop(3);
+  
+  //add in some nets and run the program again
+}

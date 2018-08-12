@@ -1,0 +1,15 @@
+@Java
+
+@@
+method main()
+{
+  Jeroo sally = new Jeroo(9);
+  while( sally.isNet(AHEAD) && sally.hasFlower() )
+  {
+    sally.toss();
+    sally.hop();
+    sally.plant();
+	} 	
+ } 
+ 
+ 
